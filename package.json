@@ -1,0 +1,21 @@
+{
+  "name": "learn-node-html-templating",
+  "version": "1.0.0",
+  "description": "learn a html templating with node",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Hansana Wijethunaga",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-handlebars": "3.0",
+    "pug": "^3.0.2"
+  }
+}
