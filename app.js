@@ -5,7 +5,7 @@ const shopRoutes = require("./routes/shop");
 const path = require("path");
 
 const app = express();
-app.set("view engine", "pug");
+app.set("view engine", "ejs");
 app.set("views", "views"); // this is not necessary if the views are stored in views dir
 
 app.use(express.json());
