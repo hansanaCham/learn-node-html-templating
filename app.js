@@ -3,9 +3,18 @@ const bodyParser = require("body-parser");
 const adminData = require("./routes/admin");
 const shopRoutes = require("./routes/shop");
 const path = require("path");
+const expressHbs = require("express-handlebars");
 
 const app = express();
-app.set("view engine", "pug");
+app.engine(
+  "hbs",
+  expressHbs({
+    layoutsDir: "views/layouts/",
+    defaultLayout: "main-layout",
+    extname: "hbs",
+  })
+);
+app.set("view engine", "hbs");
 app.set("views", "views"); // this is not necessary if the views are stored in views dir
 
 app.use(express.json());
